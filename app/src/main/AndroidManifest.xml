@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Phase 1 declares NO permissions on purpose.
+        Later phases add them one at a time, each with an explanation screen:
+          Phase 2:  PACKAGE_USAGE_STATS (Usage Access, granted by the user in Settings)
+          Phase 5:  POST_NOTIFICATIONS
+          Phase 6:  AccessibilityService (enabled by the user in Accessibility settings)
+          Phase 7:  SYSTEM_ALERT_WINDOW (Display over other apps)
+    -->
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TimeZen">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TimeZen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        The Android "window" theme shown while the app starts. All real screens are
+        drawn by Jetpack Compose using the Material 3 theme in ui/theme/Theme.kt.
+    -->
+    <style name="Theme.TimeZen" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/timezen_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
